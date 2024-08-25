@@ -1,0 +1,13 @@
+services:
+  api: &main_app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: rustrag:${RUSTRAG_VERSION:-latest}
+    restart: always
+    env_file:
+      - .env
+    environment:
+      RUSTRAG_HOST: 0.0.0.0
+
+
