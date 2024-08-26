@@ -11,20 +11,16 @@ maintainers = [
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-fastapi = "^0.111.0"
-uvicorn = { version = "^0.30.1", extras = ["standard"] }
-pydantic = "^2"
-pydantic-settings = "^2"
-yarl = "^1"
-ujson = "^5.10.0"
-httptools = "^0.6.1"
-pymongo = {version = "^4.7.2", extras = ["srv"]}
-llama-index = "^0.10.36"
+python = "^3.10"
 llama-index-embeddings-huggingface = "^0.2.0"
-llama-index-vector-stores-mongodb = "^0.1.5"
 llama-index-llms-llama-api = "^0.1.4"
 llama-index-readers-json = "^0.1.5"
+llama-index = "^0.10.37"
+llama-index-vector-stores-mongodb = "^0.1.5"
+fastapi = "^0.112.2"
+uvicorn = {version = "^0.30.1", extras = ["standard"]}
+pydantic-settings = "^2"
+ujson = "^5.10.0"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -33,8 +33,8 @@ class Settings(BaseSettings):
     workers_count: int = 1
     # Enable uvicorn reloading
     reload: bool = True
-    # llama: str = os.getenv("LLAMA_API_KEY")
-    # atlas_uri: str = os.getenv("ATLAS_URI")
+    llama_api_key: str = os.getenv("LLAMA_API_KEY")
+    atlas_uri: str = os.getenv("ATLAS_URI")
     db_name: str = "rustrag"
     collection_name: str = "rust_docs"
     idx_name: str = "idx_embedding"
