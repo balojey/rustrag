@@ -10,7 +10,7 @@ from llama_index.llms.llama_api import LlamaAPI
 from llama_index.core.response import Response
 
 from rustrag.web.api.rag.schema import Message
-from settings import settings
+from rustrag.settings import settings
 
 router = APIRouter()
 
